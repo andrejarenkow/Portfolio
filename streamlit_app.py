@@ -24,6 +24,7 @@ st.set_page_config(
 
 st.title('Portfolio André Jarenkow')
 
+st.subheader('Career timeline')
 with st.spinner(text="Building line"):
     with open('timeline.json', "r") as f:
         data = f.read()
