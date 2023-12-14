@@ -45,17 +45,16 @@
     },
     {
       "start_date": {
-        "year": "2019",
-        "month": "7"
+        "year": "2021",
+        "month": "4"
       },
       "media": {
-        "url": "https://ars.els-cdn.com/content/image/1-s2.0-S2468502X21000334-gr2.jpg",
-        "caption": "sample prescriptions/rx",
-        "credit": "Elsevier"
+        "url": "https://github.com/andrejarenkow/Portfolio/blob/main/imagens_timeline/logo%20cevs.png?raw=true",
+        "thumbnail": "https://github.com/andrejarenkow/Portfolio/blob/main/imagens_timeline/logo%20cevs.png?raw=true"
       },
       "text": {
-        "headline": "1st project",
-        "text": "after working on backend development for sometime, I got my 1st core DS project i.e. prescription digitization for extracting important information in prescription images"
+        "headline": "Data Analyst specializing in Health",
+        "text": "As a Health Specialist at the State Center for Health Surveillance, I primarily work on the National Program for Surveillance of the Quality of Drinking Water (VIGIAGUA). I assist colleagues in managing and supporting program activities. I'm responsible for user management in the SISAGUA system for Rio Grande do Sul, providing access to data entry for drinking water in all municipalities. Additionally, I contribute to the Environmental Monitoring of SARS-CoV-2 in Sewage project, aiding in the creation of monthly and weekly bulletins available on the Official Twitter of the State Health Department of RS. Proficient in Python, I elevate data analysis in environmental surveillance, both within my program and in related areas. I was one of the developers of the Ovitraps Monitoring Panel, which records traps used in monitoring Aedes Aegypti in RS."
       }
     },
     {
