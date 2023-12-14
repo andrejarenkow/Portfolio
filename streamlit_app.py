@@ -19,10 +19,12 @@ st.set_page_config(
     initial_sidebar_state='collapsed'
 ) 
 
+
+
+
+st.title('Portfolio André Jarenkow')
+
 with st.spinner(text="Building line"):
     with open('timeline.json', "r") as f:
         data = f.read()
         timeline(data, height=500)
-
-
-st.title('Portfolio André Jarenkow')
