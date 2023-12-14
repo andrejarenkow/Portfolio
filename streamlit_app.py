@@ -31,8 +31,10 @@ Hello! My name is André Jarenkow, and this is my Portfolio!.
 
 st.title('Portfolio André Jarenkow')
 
-st.subheader('Career timeline')
-with st.spinner(text="Building line"):
-    with open('timeline.json', "r") as f:
-        data = f.read()
-        timeline(data, height=500)
+career_timeline = st.container(border=True)
+with career_timeline:
+ st.subheader('Career timeline')
+ with st.spinner(text="Building line"):
+     with open('timeline.json', "r") as f:
+         data = f.read()
+         timeline(data, height=500)
