@@ -3,7 +3,7 @@ numpy
 pandas
 plotly
 streamli
-requests=
+requests
 folium
 streamlit-folium
 altair
