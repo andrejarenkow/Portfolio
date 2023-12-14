@@ -26,7 +26,7 @@
       },
       "text": {
         "headline": "Deputy Production Coordinator",
-        "text": " Managed the production of veterinary medicines, ensuring European quality standards. Led a team of 15 individuals, overseeing four production lines at the factory. Assisted in production planning and execution, collaborating with the Production Control and Planning (PCP) team from the Spanish headquarters. Played a pivotal role in implementing the SAP R3 system in the production area."
+        "text": "Managed the production of veterinary medicines, ensuring European quality standards. Led a team of 15 individuals, overseeing four production lines at the factory. Assisted in production planning and execution, collaborating with the Production Control and Planning (PCP) team from the Spanish headquarters. Played a pivotal role in implementing the SAP R3 system in the production area."
       }
     },
     {
@@ -40,7 +40,7 @@
       },
       "text": {
         "headline": "Chemical Engineer specializing in Health",
-        "text": "Specialized in both Environmental Surveillance and Sanitary Surveillance. In Sanitary Surveillance, played a key role in inspecting establishments producing Cosmetics and Sanitizers in the 14th Regional Health Coordinator (covering 22 municipalities) in the northwest of the State of Rio Grande do Sul. In Environmental Surveillance, primarily worked on the Vigiagua program, overseeing water quality surveillance for human consumption in the municipalities covered by the 14th CRS. This involved training new inspectors, monitoring goals, and inspecting various water supply sources such as water treatment plants and artesian wells. Additionally, contributed to the National Dengue Control Program, assisting in map creation, data analysis, and decision-making regarding insecticide application. Towards the end of 2019, contributed to the development of an interactive panel displaying Dengue cases in the region. The panel, available at https://vigilancia-ambiental14crs.github.io/painel_arboviroses/, is regularly updated by extracting raw data from the SINAN WEB platform, processing it using Python, and loading it into an online spreadsheet from which the panel retrieves its data."
+        "text": "Specialized in both Environmental and Sanitary Surveillance. In Sanitary Surveillance, inspected Cosmetics and Sanitizers production facilities in the 14th Regional Health Coordinator area. In Environmental Surveillance, focused on the Vigiagua program, overseeing water quality in the 14th CRS municipalities, conducting training, monitoring goals, and inspecting water sources. Contributed to the National Dengue Control Program, aiding in map creation, data analysis, and decision-making. Coordinated the development and maintenance of an interactive Dengue cases panel for the region, regularly updated using Python for data processing."
       }
     },
     {
