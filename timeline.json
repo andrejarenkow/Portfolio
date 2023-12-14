@@ -17,16 +17,16 @@
     },
     {
       "start_date": {
-        "year": "2018",
-        "month": "6"
+        "year": "2015",
+        "month": "8"
       },
       "media": {
-        "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_9io7Zmn_xunW5wZynIwqHOufi9Rh51pcxQ&usqp=CAU",
-        "credit": "Datacamp"
+        "url": "https://github.com/andrejarenkow/Portfolio/blob/main/imagens_timeline/hipra.png?raw=true",
+        "thumbnail": "https://github.com/andrejarenkow/Portfolio/blob/main/imagens_timeline/hipra.png?raw=true"
       },
       "text": {
-        "headline": "My Introduction to Data Science",
-        "text": "<p>This was the time I started off with the DataCamp's Data Scientist Career Track. It had nearly 22 modules which I took 2 months to complete<p>"
+        "headline": "Deputy Production Coordinator",
+        "text": " Managed the production of veterinary medicines, ensuring European quality standards. Led a team of 15 individuals, overseeing four production lines at the factory. Assisted in production planning and execution, collaborating with the Production Control and Planning (PCP) team from the Spanish headquarters. Played a pivotal role in implementing the SAP R3 system in the production area."
       }
     },
     {
