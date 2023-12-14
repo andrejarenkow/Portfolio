@@ -9,6 +9,7 @@ import time
 from altair import Chart
 import plotly.figure_factory as ff
 import geopandas as gpd
+from streamlit_timeline import timeline
  
 # Configurações da página
 st.set_page_config(
