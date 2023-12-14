@@ -13,11 +13,15 @@ import geopandas as gpd
 # Configurações da página
 st.set_page_config(
     page_title="Andre Jarenkow",
-    page_icon="	:glasses:",
+    page_icon="	:bug:",
     layout="wide",
     initial_sidebar_state='collapsed'
 ) 
 
+with st.spinner(text="Building line"):
+    with open('timeline.json', "r") as f:
+        data = f.read()
+        timeline(data, height=500)
 
 
 st.title('Portfolio André Jarenkow')
