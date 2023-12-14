@@ -2,16 +2,16 @@
   "events": [
     {
       "start_date": {
-        "year": "2017",
-        "month": "9"
+        "year": "2014",
+        "month": "6"
       },
       "media": {
-        "url": "https://github.com/andrejarenkow/Portfolio/blob/main/imagens_timeline/hipra.png?raw=true",
-        "credit": "Tata 1mg"
+        "url": "https://github.com/andrejarenkow/Portfolio/blob/main/imagens_timeline/ufrgs3.jpg?raw=true",
+        "credit": ""
       },
       "text": {
-        "headline": "2nd Project, Lab Reports Digitization",
-        "text": "This involved extracting lab parameters from pdf reports received by Tata 1mg. An inhouse solution Lab Labeler was devised using Airflow & AWS Lambda digitizing 4k reports/hour"
+        "headline": "Substitute Professor at Federal University of Rio Grande do Sul",
+        "text": "Substitute Professor at the Federal University of Rio Grande do Sul - taught experimental and theoretical chemistry to undergraduate students in engineering, pharmacy, and other programs. Responsibilities included lesson preparation, experiment supervision, teaching, question creation, and exam grading."
       }
     },
     {
