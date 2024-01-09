@@ -22,7 +22,7 @@ que fosse fácil de entender.
 # Sobre mim
             """
     st.markdown(texto)
-    st.image('https://media.licdn.com/dms/image/D4D03AQEDuEud7TtpUw/profile-displayphoto-shrink_800_800/0/1664902362993?e=1704326400&v=beta&t=-FzZf4tS3p9l4KsfqoCMUAGDiaMUkmLcTHb6d6-UczA', width=100)
+    st.image('https://github.com/andrejarenkow/Portfolio/blob/main/imagens_timeline/andre.png?raw=true', width=100)
 
     texto = """
 
