@@ -20,6 +20,12 @@ st.set_page_config(
     initial_sidebar_state='collapsed'
 ) 
 
+# Função Lottie
+def load_lottiefile(filepath: str):
+    with open(filepath, "r") as f:
+        return json.load(f)
+
+
 # Barra lateral para info
 with st.sidebar:
  
@@ -28,6 +34,8 @@ with st.sidebar:
 Hello! My name is André Jarenkow, and this is my Portfolio!.
             """
     st.markdown(texto)
+    st_lottie("https://assets5.lottiefiles.com/packages/lf20_V9t630.json")
+    
 
 
 st.title('Portfolio André Jarenkow')
