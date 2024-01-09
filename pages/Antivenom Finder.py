@@ -3,7 +3,6 @@ import geopandas as gpd
 import plotly.express as px
 import streamlit as st
 import plotly.graph_objects as go
-import requests
 import folium
 from streamlit_folium import st_folium, folium_static
 
@@ -34,26 +33,6 @@ with tab1:
         "SALon - Soro antilonômico - taturana" : ": Esse antídoto é usado para tratamento de envenenamento por lagartas do gênero Lonomia sp. (taturana)."
     }
     
-    #dicionario_imagens = {
-        #"SAAr - Soro antiaracnídico" : "st.image('', caption='Phoneutria')"
-    
-    #if st.checkbox('Buscar minha localização atual'):
-    #    try:
-    #        loc = streamlit_js_eval.get_geolocation()
-    #        location_json = streamlit_js_eval.get_page_location()
-    #        lat = str(loc['coords']['latitude'])
-    #        long = str(loc['coords']['longitude'])
-    #        url = f'https://nominatim.openstreetmap.org/reverse?format=json&lat={lat}&lon={long}'
-    #        localizacao_usuario = requests.get(url)
-    #        loc_usuario = localizacao_usuario.text
-    #        index_inicio = loc_usuario.find('"city":')
-    #        index_fim = loc_usuario.find(',"municipality"')
-    #        municipio_do_usuario = loc_usuario[index_inicio+8:index_fim-1]
-    #    except:
-    #        st.error('Permita o uso da sua localização atual clicando em PERMITIR!')
-    #else:
-    #    municipio_do_usuario = ''
-    #unificando nomes de municipios
     dicionario = {"Restinga Seca": "Restinga Sêca",
         "Santana do Livramento": "Sant'Ana do Livramento","Santo Antônio Das Missões":"Santo Antônio das Missões", "São Pedro Das Missões":"São Pedro das Missões"}
     
