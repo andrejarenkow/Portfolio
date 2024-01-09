@@ -34,7 +34,6 @@ with st.sidebar:
 Hello! My name is André Jarenkow, and this is my Portfolio!.
             """
     st.markdown(texto)
-    st_lottie("https://assets5.lottiefiles.com/packages/lf20_V9t630.json")
     
 
 
