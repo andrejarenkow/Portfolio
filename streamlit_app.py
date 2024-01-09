@@ -22,7 +22,7 @@ st.set_page_config(
 # Barra lateral para info
 with st.sidebar:
  
-    st.image('https://media.licdn.com/dms/image/D4D03AQEDuEud7TtpUw/profile-displayphoto-shrink_800_800/0/1664902362993?e=1704326400&v=beta&t=-FzZf4tS3p9l4KsfqoCMUAGDiaMUkmLcTHb6d6-UczA')
+    st.image('https://github.com/andrejarenkow/Portfolio/blob/main/imagens_timeline/andre.png?raw=true')
     texto = """
 Hello! My name is André Jarenkow, and this is my Portfolio!.
             """
