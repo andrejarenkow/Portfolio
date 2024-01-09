@@ -62,37 +62,7 @@ col1.metric("Total episódios", len(dados))
 col2.metric("Tempo total em minutos", tempo_total)
 col3.metric("Tempo médio em minutos", dados['duration'].mean().round(1))
 
-#Bolao The Game Awards
-st.divider()
-st.subheader('Bolão The Game Awards 2023!')
-imagens_jogos = pd.read_csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vTviyi86G1qxhCZacjpN1v8ShugrnPn2Y-WwzcVjpEhNsZCWNcVQAMAOLXwYnj8g_1_IsPx7YMxKr2O/pub?gid=255129162&single=true&output=csv')
-imagens_jogos = imagens_jogos.set_index('Jogo')
-imagens_jogos = imagens_jogos.to_dict()['Imagem']
 
-dados_game_awards = pd.read_csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vTviyi86G1qxhCZacjpN1v8ShugrnPn2Y-WwzcVjpEhNsZCWNcVQAMAOLXwYnj8g_1_IsPx7YMxKr2O/pub?gid=1743518019&single=true&output=csv')
-dados_game_awards = dados_game_awards.replace(imagens_jogos)
-
-st.dataframe(dados_game_awards, hide_index=True, use_container_width = True,
-             column_config={
-                 'Dan': st.column_config.ImageColumn(width='small'),
-                 'Cardoso': st.column_config.ImageColumn(width='small'),
-                 'Márcia': st.column_config.ImageColumn(width='small'),
-                 'Marcellus': st.column_config.ImageColumn(width='small'),
-                 'Vencedor': st.column_config.ImageColumn(width='small')
-             }
-            )
-st.divider()
-
-resultado = []
-
-for i in ['Dan',	'Cardoso',	'Márcia',	'Marcellus'	]:
-
- resultado.append((i,(dados_game_awards[i]==dados_game_awards['Vencedor']).sum()))
-
-resultado = pd.DataFrame(resultado, columns = ['Participante', 'Acertos']).sort_values('Acertos', ascending=False)
-st.dataframe(resultado, hide_index=True, use_container_width = True,
-             column_config={
-                 'Acertos': st.column_config.ProgressColumn(min_value=0, max_value=23, format="%f"),})
 
 
 #Gráficos
