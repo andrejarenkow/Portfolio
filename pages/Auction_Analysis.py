@@ -28,9 +28,9 @@ st.set_page_config(
 col1, col2, col3 = st.columns([2,12,1])
 
 col1.image('https://www.letravivaleiloes.com.br/custom/imagens/logo.png', width=200)
-col2.title('Monitoramento Leilão Letra Viva')
-col2.caption('Painel desenvolvido por André Jarenkow')
-col2.caption('https://www.letravivaleiloes.com.br/leilao.asp?Num=38762')
+col2.title('Auction Dashboard - Letra Viva')
+col2.caption('Dashboard developed by André Jarenkow')
+col2.caption('Original auction link - https://www.letravivaleiloes.com.br/leilao.asp?Num=38762')
 
 #with st.form('Atualizar dados!'):
 #    st.write('Clique aqui para atualizar')
