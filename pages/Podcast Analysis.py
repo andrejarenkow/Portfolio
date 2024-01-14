@@ -25,7 +25,7 @@ This dashboard was created based on a study of the Spotipy library, which facili
 
     texto = """
 
-My name is André Jarenkow, a Python language enthusiast, and a loyal listener to UP!.
+My name is André Jarenkow, a Python language enthusiast, and a loyal listener to UP!
             """
     st.markdown(texto)
     
