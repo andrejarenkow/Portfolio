@@ -61,7 +61,7 @@ with tab1:
         except: 
             st.write("")
     
-        mun_origem = st.selectbox('Município onde está o paciente', lista_mun_distinct, index=None, placeholder="Selecione o município onde está o paciente")
+        mun_origem = st.selectbox('Municipality where the patient is located', lista_mun_distinct, index=None, placeholder="Select the municipality where the patient is located")
         #if mun_origem==municipio_do_usuario:
            # mun_origem = municipio_do_usuario
         try:
@@ -85,22 +85,22 @@ with tab1:
         
             folium.Marker(
                 location= [municipio_origem['Latitude_origem'].values, municipio_origem['Longitude_origem'].values],
-                tooltip="Origem",
-                popup="Você está aqui",
+                tooltip="Origin",
+                popup="You are here",
                 icon=folium.Icon(color="green"),
             ).add_to(mapa)
             
             folium.Marker(
                 location= [municipio_destino['Latitude_destino'].values, municipio_destino['Longitude_destino'].values],
-                tooltip="Destino",
-                popup=f"O soro está aqui, na cidade de {municipio_destino['Município destino'].values[0]}, {municipio_destino['Destination'].values[0]}",
+                tooltip="Destiny",
+                popup=f"The antivenom is here, in {municipio_destino['Município destino'].values[0]}, {municipio_destino['Destination'].values[0]}",
                 icon=folium.Icon(color="red"),
              ).add_to(mapa)
             
             #folium.TileLayer('MapQuest Open Aerial').add_to(mapa)
         
             with col4: 
-                st.subheader('Hospital mais próximo')
+                st.subheader('Nearest hospital')
                 st_data = folium_static(mapa, width=1000, height=600)
             with col5:
                 mun_destino = municipio_origem.dropna()['Município destino'].values[0]
