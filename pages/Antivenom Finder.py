@@ -8,7 +8,7 @@ from streamlit_folium import st_folium, folium_static
 
 # Configurações da página
 st.set_page_config(
-    page_title="Buscador de Soros Antiveneno no Rio Grande do Sul",
+    page_title="Andre Jarenkow Portfolio",
     page_icon="	:snake:",
     layout="wide",
     initial_sidebar_state='collapsed'
@@ -16,10 +16,10 @@ st.set_page_config(
 col1, col2, col3 = st.columns([1,4,1])
 
 col1.image('https://github.com/andrejarenkow/PainelOvitrampas/blob/main/logo_cevs%20(1).png?raw=true', width=200)
-col2.title('Buscador de Soros Antiveneno no Rio Grande do Sul')
+col2.title('Antivenom Locator in Rio Grande do Sul')
 col3.image('https://github.com/andrejarenkow/PainelOvitrampas/blob/main/logo_estado%20(3).png?raw=true', width=300)
 
-tab1, tab2, tab3 = st.tabs(["Buscador de Soros", "Sobre", "Metodologia"])
+tab1, tab2, tab3 = st.tabs(["Antivenom Locator App", "Abou", "Methodology"])
                            
 with tab1:
     st.header("Buscador de Soros")
