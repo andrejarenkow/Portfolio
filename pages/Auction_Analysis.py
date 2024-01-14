@@ -259,13 +259,13 @@ leilao_dia_2 = 232594 - 166987
 with col1:
  container = st.container(border=True)
  with container:
-  st.metric('Valor vendido', f'R$ {dados["valor_vendido"].sum():,.2f}',)# delta = f'R$ {dados["valor_vendido"].sum()-valor_vendido_ontem:,.2f} em relação a ontem')
-  st.metric('Incremento Dia 1', f'R$ {leilao_dia_1:,.2f}')
-  st.metric('Incremento Dia 2', f'R$ {leilao_dia_2:,.2f}')
-  st.metric('Comissão estimada', f'R$ {dados["valor_vendido"].sum()*0.05:,.2f}')
+  st.metric('Sold value', f'R$ {dados["valor_vendido"].sum():,.2f}',)# delta = f'R$ {dados["valor_vendido"].sum()-valor_vendido_ontem:,.2f} em relação a ontem')
+  st.metric('Increment Day 1', f'R$ {leilao_dia_1:,.2f}')
+  st.metric('Increment Day 1', f'R$ {leilao_dia_2:,.2f}')
+  st.metric('Estimated Commission', f'R$ {dados["valor_vendido"].sum()*0.05:,.2f}')
   #st.metric('Total de Visitas', dados['visitas'].sum())
   #st.metric('Total de Lances', dados['lances'].sum())
-  st.metric('Itens com lances', f"{((dados['lances']>0).sum()/len(dados['lancado'])*100).round(1)} %")
+  st.metric('Items with Bids', f"{((dados['lances']>0).sum()/len(dados['lancado'])*100).round(1)} %")
  
  
  
@@ -275,7 +275,7 @@ with col2:
    fig.update_xaxes(title_text="Data")
    
    # Set y-axes titles
-   fig.update_yaxes(title_text="Venda total")
+   fig.update_yaxes(title_text="Total Sales")
    st.plotly_chart(fig, use_container_width=True)
 
 
