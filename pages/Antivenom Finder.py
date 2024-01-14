@@ -25,12 +25,12 @@ with tab1:
     st.header("Antivenom Locator")
     #dicionario soros
     dicionario_explicacao = {
-        "SAB - Soro antibotrópico - jararacas, cruzeira, cotiara" : ": Esse antídoto é usado para tratamento de envenenamento por serpentes do gênero Bothrops sp. No Rio Grande do Sul encontramos: Bothrops jararaca (jararaca), Bothrops pubescens (jararaca-pintada), Bothrops alternatus (cruzeira), Bothrops diporus (jararaca-pintada) e Bothrops cotiara (cotiara)",
-        "SAC - Soro anticrotálico - cascavel" : ": Esse antídoto é usado para tratamento de envenenamento por serpentes do gênero Crotalus sp. No Rio Grande do Sul temos a Crotalus durissus (cascavel).",
-        "SAEl - Soro antielapídico - coral verdadeira" : ": Esse antídoto é usado para tratamento de envenenamento por serpentes do gênero Micrurus sp. No Rio Grande do Sul encontramos a Micrurus altirostris (coral-verdadeira).",
-        "SAEsc - Soro antiescorpiônico - escorpião amarelo" : ": Esse antídoto é usado para tratamento de envenenamento por escorpiões do gênero Tityus sp. No Rio Grande do Sul, é utilizado principalmente para tratamento de envenenamento por Tityus serrulatus (escorpião-amarelo).",
-        "SAAr - Soro antiaracnídico - armadeira, marrom" : ": Esse antídoto é usado para tratamento de envenenamento por aranhas dos gêneros Phoneutria sp. (aranha-armadeira), Loxosceles sp (aranha-marrom), e escorpiões do gênero Tityus sp.",
-        "SALon - Soro antilonômico - taturana" : ": Esse antídoto é usado para tratamento de envenenamento por lagartas do gênero Lonomia sp. (taturana)."
+        "SAB - Soro antibotrópico - jararacas, cruzeira, cotiara" : ": This antidote is used for the treatment of snakebites by snakes of the Bothrops genus. In Rio Grande do Sul, we find: Bothrops jararaca (jararaca), Bothrops pubescens (painted jararaca), Bothrops alternatus (cruzeira), Bothrops diporus (painted jararaca), and Bothrops cotiara (cotiara).",
+        "SAC - Soro anticrotálico - cascavel" : ": This antidote is used for the treatment of snakebites by snakes of the Crotalus genus. In Rio Grande do Sul, we have Crotalus durissus (rattlesnake).",
+        "SAEl - Soro antielapídico - coral verdadeira" : ": This antidote is used for the treatment of snakebites by snakes of the Micrurus genus. In Rio Grande do Sul, we find Micrurus altirostris (true coral snake).",
+        "SAEsc - Soro antiescorpiônico - escorpião amarelo" : ": This antidote is used for the treatment of envenomation by scorpions of the Tityus genus. In Rio Grande do Sul, it is mainly used for the treatment of envenomation by Tityus serrulatus (yellow scorpion).",
+        "SAAr - Soro antiaracnídico - armadeira, marrom" : ": This antidote is used for the treatment of envenomation by spiders of the Phoneutria genus (wandering spider), Loxosceles genus (brown recluse), and scorpions of the Tityus genus.",
+        "SALon - Soro antilonômico - taturana" : ": This antidote is used for the treatment of envenomation by caterpillars of the Lonomia genus (caterpillar)."
     }
     
     dicionario = {"Restinga Seca": "Restinga Sêca",
@@ -61,7 +61,7 @@ with tab1:
         except: 
             st.write("")
     
-        mun_origem = st.selectbox('Municipality where the patient is located', lista_mun_distinct, index=None, placeholder="Select the municipality where the patient is located")
+        mun_origem = st.selectbox('Municipality where the patient is located', lista_mun_distinct, index=None, placeholder="Select the municipality")
         #if mun_origem==municipio_do_usuario:
            # mun_origem = municipio_do_usuario
         try:
