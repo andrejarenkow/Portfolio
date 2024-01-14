@@ -6,7 +6,7 @@ import plotly.express as px
 
 # Configurações da página
 st.set_page_config(
-    page_title="Análise UP! Podcast",
+    page_title="UP! Podcast analysis",
     page_icon="	:up:",
     layout="wide",
     initial_sidebar_state='collapsed'
@@ -16,8 +16,7 @@ st.set_page_config(
 with st.sidebar:
     texto = """
 # Sobre o painel
-Este painel foi feito a partir de um estudo da biblioteca Spotipy, a qual facilita o consumo da API do Spotify. Selecionei o podcast UP! para avaliar seus dados, e deixá-los postos de uma maneira
-que fosse fácil de entender.
+This dashboard was created based on a study of the Spotipy library, which facilitates the consumption of the Spotify API. I selected the UP! podcast to evaluate its data and present it in a way that is easy to understand.
 
 # Sobre mim
             """
@@ -34,8 +33,8 @@ Me chamo André Jarenkow, entusiasta da linguagem Python e ouvinte fiel ao UP!.
 
 # Título principal do painel
 imagem, titulo  = st.columns([1, 6])
-titulo.header("Análise Podcast UP - via API Spotify")
-titulo.markdown('[Assine o UP! a partir de R$ 5,00](https://www.catarse.me/up)')
+titulo.header("Podcast Analysis: UP! - via Spotify API")
+titulo.markdown('[Subscribe to UP! starting from BRL 5.00](https://www.catarse.me/up)')
 imagem.image('https://i.scdn.co/image/ab6765630000ba8a123f70dfa953d4707a9f2b59', width=100)
 
 #Dados
@@ -58,9 +57,9 @@ top_participacoes = top_participacoes.set_index('Nome')
 tempo_total = dados['duration'].sum().round(1)
 
 col1, col2, col3 = st.columns(3)
-col1.metric("Total episódios", len(dados))
-col2.metric("Tempo total em minutos", tempo_total)
-col3.metric("Tempo médio em minutos", dados['duration'].mean().round(1))
+col1.metric("Total episodes", len(dados))
+col2.metric("Total time in minutes", tempo_total)
+col3.metric("Average time in minutes", dados['duration'].mean().round(1))
 
 
 
@@ -70,11 +69,11 @@ col1, col2, = st.columns([1.5,1])
 grafico_duracao = px.scatter(dados, x='release_date', y='duration', color='nome_podcast', hover_data=['name','quem_esta'],
                              color_discrete_sequence=['#FFCB00','purple'],
                              labels={
-                     "release_date": "Data",
-                     "duration": "Duração (minutos)",
-                     "nome_podcast": "Fase do podcast",
-                     'name':'Nome do episódio',
-                     'quem_esta':'Participantes'
+                     "release_date": "Release date",
+                     "duration": "Duration (minutes)",
+                     "nome_podcast": "Podcast phase",
+                     'name':'Episode name',
+                     'quem_esta':'Participants'
                  })
 grafico_duracao.update_layout(legend=dict(
     orientation="h",
@@ -88,28 +87,28 @@ with col1:
     st.plotly_chart(grafico_duracao, theme="streamlit", use_container_width=True)
 
 with col2:
-    st.markdown('##### Ranking de participações')
+    st.markdown('##### Participation Ranking')
     st.dataframe(top_participacoes,
                  column_config={
                     'Participações': st.column_config.Column("Nº", width='small'),
-                    'Porcentagem': st.column_config.ProgressColumn('Total', help='Porcentagem de participação do total de episódios', min_value=0, max_value=1),
-                    'Linha': st.column_config.BarChartColumn('Linha do tempo')
+                    'Porcentagem': st.column_config.ProgressColumn('Total', help='Percentage of participation in total episodes', min_value=0, max_value=1),
+                    'Linha': st.column_config.BarChartColumn('Timeline')
                     })
 
 
 
 #Tabela
 st.divider()
-st.subheader('Lista de Episódios')
+st.subheader('Episode list')
 st.dataframe(dados.set_index('release_date'), 
                 column_config={
-                    'url_imagem': st.column_config.ImageColumn('Capa', help='Capa do episódio', width ='small'),
-                    'release_date': st.column_config.DateColumn('Data', format="DD.MM.YYYY", help='Data de lançamento do episódio'),
-                    'duration': st.column_config.NumberColumn("Duração (minutos)", format="%d", ),
+                    'url_imagem': st.column_config.ImageColumn('Cover', help='Episode Cover', width ='small'),
+                    'release_date': st.column_config.DateColumn('Date', format="DD.MM.YYYY", help='Episode release date'),
+                    'duration': st.column_config.NumberColumn("Duration (minutes)", format="%d", ),
                     'link_spotify': st.column_config.LinkColumn("Link"),
-                    'description': st.column_config.Column("Descrição"),
-                    'quem_esta': st.column_config.Column("Participantes"),
-                    'name': st.column_config.Column("Nome do episódio")
+                    'description': st.column_config.Column("Description"),
+                    'quem_esta': st.column_config.Column("Participants"),
+                    'name': st.column_config.Column("Episode name")
                     
 
                 })
