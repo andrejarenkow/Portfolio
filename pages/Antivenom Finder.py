@@ -19,10 +19,10 @@ col1.image('https://github.com/andrejarenkow/PainelOvitrampas/blob/main/logo_cev
 col2.title('Antivenom Locator in Rio Grande do Sul')
 col3.image('https://github.com/andrejarenkow/PainelOvitrampas/blob/main/logo_estado%20(3).png?raw=true', width=300)
 
-tab1, tab2, tab3 = st.tabs(["Antivenom Locator App", "Abou", "Methodology"])
+tab1, tab2, tab3 = st.tabs(["Antivenom Locator App", "About", "Methodology"])
                            
 with tab1:
-    st.header("Buscador de Soros")
+    st.header("Antivenom Locator")
     #dicionario soros
     dicionario_explicacao = {
         "SAB - Soro antibotrópico - jararacas, cruzeira, cotiara" : ": Esse antídoto é usado para tratamento de envenenamento por serpentes do gênero Bothrops sp. No Rio Grande do Sul encontramos: Bothrops jararaca (jararaca), Bothrops pubescens (jararaca-pintada), Bothrops alternatus (cruzeira), Bothrops diporus (jararaca-pintada) e Bothrops cotiara (cotiara)",
@@ -48,17 +48,11 @@ with tab1:
     municipios["NM_MUN"] = municipios["NM_MUN"].replace(dicionario)
     
     lista_mun_distinct = sorted(municipios['NM_MUN'].unique())
-    #try:
-    #    if municipio_do_usuario!='':
-    #        lista_mun_distinct.remove(municipio_do_usuario)
-    #        lista_mun_distinct.insert(0,municipio_do_usuario)
-    #except:
-    #     pass
-    #municipios
+
     col5, col4 = st.columns([3, 4]) 
     with col5:  
-        animal = st.selectbox("Qual tipo de animal causou o acidente?", dados_geral['Animal'].unique(), index=None, placeholder="Selecione o animal")
-        soro = st.selectbox('Soro Antiveneno', dados_geral[dados_geral['Animal']==animal]['soro'].unique(), index=None, placeholder="Selecione o Soro Antiveneno")
+        animal = st.selectbox("What type of animal caused the incident?", dados_geral['Animal'].unique(), index=None, placeholder="Select the animal")
+        soro = st.selectbox('Antivenom', dados_geral[dados_geral['Animal']==animal]['soro'].unique(), index=None, placeholder="Select the antivenom")
             
         try: 
             container = st.container(border=True)
