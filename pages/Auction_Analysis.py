@@ -275,10 +275,10 @@ leilao_dia_2 = 232594 - 166987
 with col1:
  container = st.container(border=True)
  with container:
-  st.metric('Sold value', f'R$ {dados["valor_vendido"].sum():,.2f}',)# delta = f'R$ {dados["valor_vendido"].sum()-valor_vendido_ontem:,.2f} em relação a ontem')
-  st.metric('Increment Day 1', f'R$ {leilao_dia_1:,.2f}')
-  st.metric('Increment Day 1', f'R$ {leilao_dia_2:,.2f}')
-  st.metric('Estimated Commission', f'R$ {dados["valor_vendido"].sum()*0.05:,.2f}')
+  st.metric('Sold value', f'BRL {dados["valor_vendido"].sum():,.2f}',)# delta = f'R$ {dados["valor_vendido"].sum()-valor_vendido_ontem:,.2f} em relação a ontem')
+  st.metric('Increment Day 1', f'BRL {leilao_dia_1:,.2f}')
+  st.metric('Increment Day 1', f'BRL {leilao_dia_2:,.2f}')
+  st.metric('Estimated Commission', f'BRL {dados["valor_vendido"].sum()*0.05:,.2f}')
   #st.metric('Total de Visitas', dados['visitas'].sum())
   #st.metric('Total de Lances', dados['lances'].sum())
   st.metric('Items with Bids', f"{((dados['lances']>0).sum()/len(dados['lancado'])*100).round(1)} %")
