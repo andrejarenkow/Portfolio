@@ -36,18 +36,17 @@ col2.caption('Original auction link - https://www.letravivaleiloes.com.br/leilao
 with st.sidebar:
     texto = """
 # About the dashboard
-This dashboard was created based on a study of the Spotipy library, which facilitates the consumption of the Spotify API. I selected the UP! podcast to evaluate its data and present it in a way that is easy to understand.
+This dashboard was created to analyze data from an online auction site where my brother worked. 
+To collect the data, it was necessary to create a Python script using the Beautiful Soup library.
+The script performs web scraping on the auction site, extracting important data and saving it.
+A function was developed to extract even hidden data that holds the bidding history for each item. 
+The dashboard currently utilizes an Excel spreadsheet with the entire history, but the code in the GitHub repository contains all the scripts used.
 
-# About me
             """
     st.markdown(texto)
-    st.image('https://github.com/andrejarenkow/Portfolio/blob/main/imagens_timeline/andre.png?raw=true', width=100)
 
-    texto = """
 
-My name is André Jarenkow, a Python language enthusiast, and a loyal listener to UP!
-            """
-    st.markdown(texto)
+
 
 #with st.form('Atualizar dados!'):
 #    st.write('Clique aqui para atualizar')
