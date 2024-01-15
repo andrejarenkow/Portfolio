@@ -19,6 +19,18 @@ col1.image('https://github.com/andrejarenkow/PainelOvitrampas/blob/main/logo_cev
 col2.title('Antivenom Locator in Rio Grande do Sul')
 col3.image('https://github.com/andrejarenkow/PainelOvitrampas/blob/main/logo_estado%20(3).png?raw=true', width=300)
 
+# Barra lateral para info
+with st.sidebar:
+    texto = """
+# About the dashboard
+This web app was created to locate antivenom in case of accidents involving venomous animals in the state of Rio Grande do Sul, in southern Brazil. 
+The methodology tab provides a detailed description of how the database, which enables the web app's functionality, was generated.
+It has become an official tool for the state. 
+This was a team effort, developed under my supervision.
+
+            """
+    st.markdown(texto)
+
 tab1, tab2, tab3 = st.tabs(["Antivenom Locator App", "About", "Methodology"])
                            
 with tab1:
