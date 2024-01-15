@@ -42,6 +42,17 @@ Hello! My name is André Jarenkow, and this is my Portfolio!.
 
 
 st.title('Portfolio André Jarenkow')
+texto_sobre_mim = 
+"""
+I am a health specialist at the State Center for Health Surveillance of Rio Grande do Sul (CEVS-RS), with over five years of experience in environmental and health surveillance. 
+I hold a degree and a master's in Chemical Engineering from the Federal University of Rio Grande do Sul (UFRGS), and I am currently pursuing a specialization in Epidemiology at the Oswaldo Cruz Foundation (FIOCRUZ).
+
+At CEVS-RS, my main focus is on the National Program for Surveillance of the Quality of Water for Human Consumption (VIGIAGUA), where I manage, support, and inspect program activities.
+I also contribute to the Environmental Monitoring of SARS-CoV-2 in Sewage project, creating monitoring reports and performing statistical analyses.
+To achieve this, I leverage data science tools such as Python, Excel, and Power BI, skills acquired through courses and bootcamps. 
+My goal is to contribute to the promotion and protection of public health by utilizing data and evidence for decision-making.
+"""
+st.markdown(texto)
 
 career_timeline = st.container(border=True)
 with career_timeline:
