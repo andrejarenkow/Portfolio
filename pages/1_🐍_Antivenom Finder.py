@@ -23,10 +23,9 @@ col3.image('https://github.com/andrejarenkow/PainelOvitrampas/blob/main/logo_est
 with st.sidebar:
     texto = """
 # About the webapp
-This web app was created to locate antivenom in case of accidents involving venomous animals in the state of Rio Grande do Sul, in southern Brazil. 
-The methodology tab provides a detailed description of how the database, which enables the web app's functionality, was generated.
-It has become an official tool for the state. 
-This was a team effort, developed under my supervision.
+This web application has been designed to facilitate the swift location of antivenom in the event of accidents involving venomous animals in the state of Rio Grande do Sul, located in southern Brazil.
+The 'Methodology' tab offers an in-depth insight into the creation of the database, the backbone empowering the web app's functionality. 
+It has been officially recognized as a valuable tool for the state, and its development was a collaborative effort undertaken under my supervision
 
             """
     st.markdown(texto)
