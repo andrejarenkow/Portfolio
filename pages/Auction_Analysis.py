@@ -20,10 +20,10 @@ import datetime
  
 # Configurações da página
 st.set_page_config(
-    page_title="Leilão LetraViva",
-    page_icon="	:book:",
+    page_title="Andre Jarenkow - Portfolio",
+    page_icon="	:eyeglasses:",
     layout="wide",
-    initial_sidebar_state='collapsed'
+    initial_sidebar_state='expanded'
 ) 
 col1, col2, col3 = st.columns([2,12,1])
 
