@@ -16,7 +16,8 @@ st.set_page_config(
 with st.sidebar:
     texto = """
 # About the dashboard
-This dashboard was created based on a study of the Spotipy library, which facilitates the consumption of the Spotify API. I selected the UP! podcast to evaluate its data and present it in a way that is easy to understand.
+This dashboard is the result of an in-depth exploration of the Spotipy library, designed to streamline access to the Spotify API. 
+Choosing the UP! podcast as the focal point, I meticulously examined its data and crafted an interface that offers a clear and intuitive presentation for comprehensive analysis.
 
 
             """
