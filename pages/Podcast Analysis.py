@@ -6,11 +6,11 @@ import plotly.express as px
 
 # Configurações da página
 st.set_page_config(
-    page_title="UP! Podcast analysis",
-    page_icon="	:up:",
+    page_title="Andre Jarenkow - Portfolio",
+    page_icon="	:eyeglasses:",
     layout="wide",
-    initial_sidebar_state='collapsed'
-)
+    initial_sidebar_state='expanded'
+) 
 
 # Barra lateral para info
 with st.sidebar:
