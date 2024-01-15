@@ -160,15 +160,18 @@ with tab2:
     texto_sobre_ofidicos =     """
     ### ACIDENTES OFÍDICOS
     
-B Bothropic accidents are those caused by snakes of the genus _Bothrops_ sp., with the most common being the jararaca (_Bothrops jararaca_), the cruzeira (_Bothrops alternatus_), and the painted jararaca (_Bothrops pubescens_). Occasionally, accidents may occur with two rarer species, the _Bothrops diporus_ and the _Bothrops cotiara_.
-
+B Bothropic accidents are those caused by snakes of the genus _Bothrops_ sp., with the most common being the jararaca (_Bothrops jararaca_), the cruzeira (_Bothrops alternatus_), and the painted jararaca (_Bothrops pubescens_).
+Occasionally, accidents may occur with two rarer species, the _Bothrops diporus_ and the _Bothrops cotiara_.
 Crotalic accidents are those caused by the rattlesnake (_Crotalus durissus_). In Rio Grande do Sul, elapidic accidents are primarily caused by _Micrurus altirostris_, one of several species of true corals found in Brazil, and distributed throughout the state.
     """
 
     st.markdown(texto_sobre_ofidicos)
     
     texto_bothrops_cotiara = """
-    **_Bothrops cotiara_**: Cotiara, jararaca-da-barriga-preta, jararaca-preta. Apresenta coloração castanha esverdeada com desenhos de trapézios. O ventre é preto. Comprimento de, em média, 80 cm. Atividade noturna. Serpente terrícola de baixa densidade populacional, distribui-se ao norte do estado, nas áreas de mata de araucária - ecossistema que já foi amplamente reduzido. Desta forma, a cotiara encontra-se em ameaça de extinção do Rio Grande do Sul. Alimenta-se exclusivamente de pequenos roedores e marsupiais. Veneno de ação proteolítica, coagulante e hemorrágica.
+    **_Bothrops cotiara_**: Cotiara, black-bellied jararaca, black jararaca. It has a brownish-green coloration with trapezoid patterns.
+    The belly is black. Average length is around 80 cm. Nocturnal activity. 
+    A terrestrial snake with low population density, it is distributed in the northern part of the state, in the Araucaria forest areas - an ecosystem that has been significantly reduced.
+    As a result, cotiara is threatened with extinction in Rio Grande do Sul. It feeds exclusively on small rodents and marsupials. Its venom has proteolytic, coagulant, and hemorrhagic actions.
     """
     imagem_bothrops_cotiara = 'https://github.com/andrejarenkow/Soro-Antiveneno/blob/main/BCotiara_1.jpg?raw=true'
     
@@ -181,7 +184,7 @@ Crotalic accidents are those caused by the rattlesnake (_Crotalus durissus_). In
     
     
     texto_bothrops_diporus = """
-    **_Bothrops diporus_**: Jararaca-pintada, jararaca-pintada-argentina. Castanha com desenhos em forma de trapézios. Ventre manchado, semelhante à _B. pubescens_. Pode medir até 1 m. Atividade crepuscular e noturna. Comum em matas e plantações. Bastante adaptada a ambientes modificados pelo homem. Veneno de ação proteolítica, coagulante e hemorrágica.
+    **_Bothrops diporus_**: Painted jararaca, Argentine painted jararaca. Brown with trapezoid-shaped patterns. Spotted belly, similar to _B. pubescens_. Can measure up to 1 m. Crepuscular and nocturnal activity. Common in forests and plantations. Highly adapted to environments modified by humans. Venom has proteolytic, coagulant, and hemorrhagic actions.
 
     """
     bothrops_diporus_container = st.container(border=True)
@@ -193,7 +196,7 @@ Crotalic accidents are those caused by the rattlesnake (_Crotalus durissus_). In
     
     
     texto_bothrops_jararaca =  """
-    **_Bothrops jararaca_**: Jararaca, jararaca-comum. Marrom-esverdeada, com desenhos escuros em forma de V invertido. Mede em média 1 m. Atividade crepuscular e noturna. Comum em matas e florestas, principalmente nos remanescentes de Mata Atlântica. Semi-arborícola. Veneno de ação proteolítica, coagulante e hemorrágica.
+    **_Bothrops jararaca_**: Jararaca, common jararaca. Brownish-green, with dark patterns in the shape of an inverted V. Averages 1 m in length. Crepuscular and nocturnal activity. Common in forests, especially in remnants of the Atlantic Forest. Semi-arboreal. Venom has proteolytic, coagulant, and hemorrhagic actions.
 """
     bothrops_jararaca_container = st.container(border=True)
     with bothrops_jararaca_container:
@@ -202,7 +205,7 @@ Crotalic accidents are those caused by the rattlesnake (_Crotalus durissus_). In
         imagem.image('https://github.com/andrejarenkow/Soro-Antiveneno/blob/main/BJararaca_3.jpg?raw=true', width=500)        
  
     texto_bothrops_alternatus = """
-    **_Bothrops alternatus_**: Cruzeira, urutu, urutu-cruzeira, vibora de la cruz. Marrom bronzeado ou esverdeado com desenhos de ferradura ou gancho de telefone de borda branca. Possuem manchas acastanhadas no ventre. Na cabeça, possui um desenho claro de cruz em fundo escuro. Entre 1 e 1,5 m. É a maior e mais robusta dentre as _Bothrops_ sp. do estado. Atividade crepuscular e noturna. Serpente mais robusta, de campo. Vive em locais úmidos e de vegetação baixa. Costuma entrar nas matas ou plantações para se alimentar, exclusivamente, de pequenos roedores e marsupiais. Veneno de ação proteolítica, coagulante e hemorrágica.
+    **_Bothrops alternatus_**: Cruzeira, urutu, urutu-cruzeira, cross urutu, vibora de la cruz. Tan or greenish-brown with horseshoe or white-edged telephone hook patterns. Has brownish spots on the belly. On the head, it has a clear cross-shaped pattern on a dark background. Measures between 1 and 1.5 m. It is the largest and most robust among the _Bothrops_ sp. in the state. Crepuscular and nocturnal activity. A more robust snake, found in open areas. Lives in humid places with low vegetation. It usually enters forests or plantations to feed exclusively on small rodents and marsupials. Venom has proteolytic, coagulant, and hemorrhagic actions.
 """
     bothrops_alternatus_container = st.container(border=True)
     with bothrops_alternatus_container:
@@ -212,7 +215,7 @@ Crotalic accidents are those caused by the rattlesnake (_Crotalus durissus_). In
 
     
     texto_bothrops_pubescens = """
-    **_Bothrops pubescens_**: Jararaca-pintada, jararaca-do-rabo-branco, jararaca-pintada-uruguaia, jararaca-pampeana. Castanha com desenhos em forma de trapézios. Ventre manchado. Mede, em média, 60 cm. Atividade crepuscular e noturna. Espécie comum em campos abertos, como o bioma pampa podendo adentrar nas plantações. É de menor porte e bastante reativa. Veneno de ação proteolítica, coagulante e hemorrágica.
+    **_Bothrops pubescens_**: Painted jararaca, white-tailed jararaca, Uruguayan painted jararaca, Pampas jararaca. Brown with trapezoid-shaped patterns. Spotted belly. Averages around 60 cm. Crepuscular and nocturnal activity. A common species in open fields, such as the Pampas biome, and may enter plantations. It is smaller and quite reactive. Venom has proteolytic, coagulant, and hemorrhagic actions.
     """
     bothrops_pubescens_container = st.container(border=True)
     with bothrops_pubescens_container:
@@ -221,7 +224,7 @@ Crotalic accidents are those caused by the rattlesnake (_Crotalus durissus_). In
         imagem.image('https://github.com/andrejarenkow/Soro-Antiveneno/blob/main/B-pubescens_5.jpg?raw=true', width=500)     
 
     texto_crotalus_durissus = """
-    **_Crotalus durissus_**: Cascavel. Marrom amarelada com desenhos de losangos mais claros no dorso e nas laterais. Mede até 1,5 m. Período de atividades durante a tarde e a noite, principalmente no crepúsculo. Vive em locais altos, montanhosos, pedregosos, de campo entremeado com mato e invernos frios. Possuem o crepitáculo (chocalho) de anéis córneos na ponta da cauda que, ao se movimentar durante momentos estressantes, emite o som do choque dos anéis. Dificilmente ataca, e anuncia a sua presença através do som do chocalho. Praticam a caça por espreita - permanecem imóveis no solo esperando a passagem da presa (roedor). Veneno de ação neurotóxica, miotóxica e coagulante.
+    **_Crotalus durissus_**: Rattlesnake. Yellowish-brown with lighter diamond-shaped patterns on the back and sides. Measures up to 1.5 m. Active during the afternoon and night, mainly at dusk. Lives in high, mountainous, rocky areas with interspersed fields and cold winters. It has a crepitacle (rattle) of horny rings at the tip of the tail that, when moved during stressful moments, emits the sound of the rings clashing. It rarely attacks and announces its presence through the rattling sound. Hunts by ambush - remains still on the ground, waiting for the prey (rodent) to pass. Venom has neurotoxic, myotoxic, and coagulant actions.
     """
     crotalus_durissus_container = st.container(border=True)
     with crotalus_durissus_container:
