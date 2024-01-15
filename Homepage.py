@@ -15,9 +15,9 @@ from streamlit_lottie import st_lottie
 # Configurações da página
 st.set_page_config(
     page_title="Andre Jarenkow - Portfolio",
-    page_icon="	:bug:",
+    page_icon="	:eyeglasses:",
     layout="wide",
-    initial_sidebar_state='collapsed'
+    initial_sidebar_state='expanded'
 ) 
 
 # Função Lottie
