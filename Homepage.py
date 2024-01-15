@@ -31,7 +31,7 @@ with st.sidebar:
  
     st.image('https://github.com/andrejarenkow/Portfolio/blob/main/imagens_timeline/andre.png?raw=true')
     texto = """
-Hello! My name is André Jarenkow, and this is my Portfolio!.
+Hello! My name is André Jarenkow, and this is my Portfolio!
             """
     st.markdown(texto)
     st_lottie('https://raw.githubusercontent.com/andrejarenkow/Portfolio/main/Animation%20-%201705284418621.json')
@@ -52,7 +52,7 @@ I also contribute to the Environmental Monitoring of SARS-CoV-2 in Sewage projec
 To achieve this, I leverage data science tools such as Python, Excel, and Power BI, skills acquired through courses and bootcamps. 
 My goal is to contribute to the promotion and protection of public health by utilizing data and evidence for decision-making.
 """
-st.markdown(texto)
+st.markdown(texto_sobre_mim)
 
 career_timeline = st.container(border=True)
 with career_timeline:
