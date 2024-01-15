@@ -142,16 +142,6 @@ with tab1:
                     dados_mapa_vazio = dados_geral.copy()
                 
                 pontos = dados_mapa_vazio.drop_duplicates(['Destination'])
-                #pontos['Latitude_destino'] = pontos['Latitude_destino'].astype('float')
-                #pontos['Longitude_destino'] = pontos['Longitude_destino'].astype('float')
-                #fig = px.scatter_mapbox(pontos,
-                #                        lat="Latitude_destino", 
-                #                        lon="Longitude_destino", 
-                #                        hover_name="Destination",
-                #                        zoom=5)
-                #fig.update_layout(margin=go.layout.Margin(l=10, r=10, t=10, b=10),paper_bgcolor='rgba(0,0,0,0)',
-                #                  mapbox_accesstoken= 'pk.eyJ1IjoiYW5kcmUtamFyZW5rb3ciLCJhIjoiY2xkdzZ2eDdxMDRmMzN1bnV6MnlpNnNweSJ9.4_9fi6bcTxgy5mGaTmE4Pw')
-                #st.plotly_chart(fig)
           
                 mapa_vazio = folium.Map([-29.492046590850748, -53.10367543293593], zoom_start=6.3)
                 
@@ -170,7 +160,9 @@ with tab2:
     texto_sobre_ofidicos =     """
     ### ACIDENTES OFÍDICOS
     
-    Os acidentes botrópicos são aqueles causados pelas serpentes do gênero _Bothrops_ sp., sendo as mais comuns a jararaca (_Bothrops jararaca_), a cruzeira (_Bothrops alternatus_) e a jararaca-pintada (_Bothrops pubescens_). Eventualmente, ocorrem acidentes com outras duas espécies mais raras, a _Bothrops diporus_ e a _Bothrops cotiara_. Os acidentes crotálicos são aqueles causados pela cascavel (_Crotalus durissus_). No Rio Grande do Sul, os acientes elapídicos são causados, principalmente, pela _Micrurus altirostris_, uma das várias espécies de corais-verdadeiras encontradas no Brasil, e que está distribuída por todo o estado.
+B Bothropic accidents are those caused by snakes of the genus _Bothrops_ sp., with the most common being the jararaca (_Bothrops jararaca_), the cruzeira (_Bothrops alternatus_), and the painted jararaca (_Bothrops pubescens_). Occasionally, accidents may occur with two rarer species, the _Bothrops diporus_ and the _Bothrops cotiara_.
+
+Crotalic accidents are those caused by the rattlesnake (_Crotalus durissus_). In Rio Grande do Sul, elapidic accidents are primarily caused by _Micrurus altirostris_, one of several species of true corals found in Brazil, and distributed throughout the state.
     """
 
     st.markdown(texto_sobre_ofidicos)
