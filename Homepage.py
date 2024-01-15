@@ -14,7 +14,7 @@ from streamlit_lottie import st_lottie
  
 # Configurações da página
 st.set_page_config(
-    page_title="Andre Jarenkow",
+    page_title="Andre Jarenkow - Portfolio",
     page_icon="	:bug:",
     layout="wide",
     initial_sidebar_state='collapsed'
