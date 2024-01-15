@@ -156,9 +156,9 @@ with tab1:
                 st_data = folium_static(mapa_vazio, width=1000, height=600)
 
 with tab2:
-    st.header("Tipos de acidente")
+    st.header("Types of accident")
     texto_sobre_ofidicos =     """
-    ### ACIDENTES OFÍDICOS
+    ### SNAKEBITES
     
 B Bothropic accidents are those caused by snakes of the genus _Bothrops_ sp., with the most common being the jararaca (_Bothrops jararaca_), the cruzeira (_Bothrops alternatus_), and the painted jararaca (_Bothrops pubescens_).
 Occasionally, accidents may occur with two rarer species, the _Bothrops diporus_ and the _Bothrops cotiara_.
@@ -234,7 +234,7 @@ Crotalic accidents are those caused by the rattlesnake (_Crotalus durissus_). In
     
 
     texto_micrurus_altirostris = """
-    **_Micrurus altirostris_**: Coral-verdadeira. A espécie tem como característica a presença de anéis pretos e brancos sobre fundo vermelho. Os anéis circundam todo o corpo. Mede até 80 cm. A atividade ocorre principalmente durante o dia, reduzindo até o período da noite. As corais-verdadeiras têm hábitos fossoriais, vivendo em tocas ou buracos embaixo da terra nas matas ou bordas de matas. Não possuem presas especializadas como as Viperidaes, mas pequenos dentes. Precisam morder e segurar a presa para inocular o veneno. Alimentam-se de outras serpentes. Veneno de ação neurotóxica.
+    **_Micrurus altirostris_**: True Coral Snake. This species is characterized by the presence of black and white rings on a red background, encircling the entire body. It measures up to 80 cm. Activity primarily occurs during the day, reducing towards the night. True coral snakes have fossorial habits, living in burrows or holes under the ground in forests or forest edges. They do not have specialized fangs like Viperidae but small teeth. They need to bite and hold the prey to inject the venom. They feed on other snakes. Venom has neurotoxic action.
     """
     micrurus_altirostris_container = st.container(border=True)
     with micrurus_altirostris_container:
@@ -244,14 +244,14 @@ Crotalic accidents are those caused by the rattlesnake (_Crotalus durissus_). In
         
     st.divider()
     texto_sobre_aranhas = """
-    ### ACIDENTES POR ARANHAS
+    ### SPIDER BITES
     
-    Os envenenamentos por aranhas predominam no Rio Grande do Sul com relação aos demais acidentes por animais peçonhentos. Existem duas espécies de aranha de importância médica no estado, cujos envenenamentos podem ser tratados com soro antiveneno: _Loxosceles intermedia_, a aranha-marrom, e _Phoneutria nigriventris_, a aranha-armadeira. 
+    Spider poisonings predominate in Rio Grande do Sul compared to other accidents involving venomous animals. There are two species of spiders of medical importance in the state, whose poisonings can be treated with antivenom: _Loxosceles intermedia_, the brown recluse spider, and _Phoneutria nigriventris_, the wandering spider.
     """
     st.markdown(texto_sobre_aranhas)
 
     texto_loxosceles = """
-    **_Loxosceles intermedia_**: a aranha-marrom é característica de centros urbanos e pode permanecer dentro das residências, escondidas atrás de mobiliário e, por vezes, no meio das roupas pessoais, roupa de cama e toalhas. Os acidentes ocorrem quando o paciente esmaga a Loxosceles acidentalmente contra o próprio corpo ao se vestir, calçar sapatos ou limpar a casa. Não é uma aranha agressiva e é bastante pequena. O acidente pode levar ao surgimento de áreas de isquemia e necrose na pele, sendo necessário o debridamento tecidual. Pode haver a perda de grandes áreas musculares.
+    **_Loxosceles intermedia_**: The brown recluse spider is characteristic of urban centers and can remain inside residences, hidden behind furniture, and sometimes amidst personal clothing, bedding, and towels. Accidents occur when the patient accidentally crushes the Loxosceles against their own body while dressing, putting on shoes, or cleaning the house. It is not an aggressive spider and is quite small. The accident can lead to the appearance of areas of ischemia and necrosis in the skin, requiring tissue debridement. There may be a loss of large muscle areas.
     """
     loxosceles_container = st.container(border=True)
     with loxosceles_container:
@@ -260,7 +260,7 @@ Crotalic accidents are those caused by the rattlesnake (_Crotalus durissus_). In
         imagem.image('https://github.com/andrejarenkow/Soro-Antiveneno/blob/main/thumbnail_Loxosceles%20-%20aranha-marrom_8.jpg?raw=true', width=500) 
     
     texto_phoneutria = """
-    **_Phoneutria nigriventris_**: a armadeira é um aracnídeo de maior tamanho e apresenta comportamento reativo – ao se sentir ameaçada, pode saltar sobre a pessoa ou animal, causando o acidente. A armadeira é mais comum em áreas rurais e pode entrar em galpões, porões, e até nas residências durante o período reprodutivo, entre os meses de março e maio, quando os machos se tornam errantes em busca de fêmeas. O acidente causa dor intensa.
+    **_Phoneutria nigriventris_**: The wandering spider is a larger arachnid and exhibits reactive behavior – when feeling threatened, it can jump on a person or animal, causing the accident. The wandering spider is more common in rural areas and can enter sheds, basements, and even homes during the reproductive period, between March and May, when males become wanderers in search of females. The accident causes intense pain.
     """
     phoneutria_container = st.container(border=True)
     with phoneutria_container:
@@ -269,16 +269,16 @@ Crotalic accidents are those caused by the rattlesnake (_Crotalus durissus_). In
         imagem.image('https://github.com/andrejarenkow/Soro-Antiveneno/blob/main/Phoneutria%20-%20armadeira_9.jpeg?raw=true', width=300) 
 
     texto_sobre_escorpiao = """
-    ### ACIDENTES POR ESCORPIÃO
+    ### SCORPION ACCIDENTS
     
-    No Rio Grande do Sul há diversas espécies de escorpiões, sendo que a maioria é de baixa toxicidade. Já o _Tityus serrulatus_, conhecido popularmente como escorpião-amarelo, é o responsável pelos acidentes de alta toxicidade e que, em alguns casos, necessidade de tratamento com soro antiescorpiônico ou antiaracnídico.
+    In Rio Grande do Sul, there are several species of scorpions, with the majority being of low toxicity. However, _Tityus serrulatus_, popularly known as the yellow scorpion, is responsible for high toxicity accidents and, in some cases, requires treatment with scorpion antivenom or antiscorpion venom.
     """
     st.divider()
     st.markdown(texto_sobre_escorpiao)
     
 
     texto_tityus = """
-    **_Tityus serrulatus_**: o escorpião-amarelo é exótico no estado, sendo natural de Minas Gerais, e é provável que ele tenha se distribuído por todo o Brasil a partir do transporte humano rodoviário, em meio a produtos como verduras e legumes. Ao chegar em locais novos, se houver alimento (principalmente baratas), água e abrigo o T. serrulatus logo se adapta e se multiplica, tornando-se endêmico. Os principais grupos de risco para acidentes causados por escorpião-amarelo são as crianças e os idosos. Chega, no máximo, a 7 cm de tamanho. Possui o corpo amarelo com detalhes mais escuros no dorso, ponta das pinças e ponta da causa. Ainda, é possível identificá-lo pelas serrilhas presentes na cauda. O veneno do escorpião-amarelo pode causar alterações na frequência cardíaca, respiratória e na pressão arterial.
+    **_Tityus serrulatus_**: The yellow scorpion is exotic to the state, native to Minas Gerais, and it is likely that it has spread throughout Brazil through human road transport, often hidden in products like vegetables and fruits. Upon arriving in new locations, if there is food (especially cockroaches), water, and shelter, _T. serrulatus_ quickly adapts and multiplies, becoming endemic. The main groups at risk for yellow scorpion accidents are children and the elderly. It reaches a maximum size of 7 cm. It has a yellow body with darker details on the dorsum, pincers, and tail tip. It can also be identified by the serrations on the tail. The venom of the yellow scorpion can cause changes in heart rate, respiratory rate, and blood pressure.
     """
     tityus_container = st.container(border=True)
     with tityus_container:
@@ -287,15 +287,15 @@ Crotalic accidents are those caused by the rattlesnake (_Crotalus durissus_). In
         imagem.image('https://github.com/andrejarenkow/Soro-Antiveneno/blob/main/Tiyus_serrulatus_10.jpg?raw=true', width=500)     
 
     texto_lagarta = """
-    ### ACIDENTES POR LAGARTA
+    ### LARVAE ACCIDENTS
     
-    Existem diversas lagartas urticantes no Rio Grande do Sul, mas a _Lonomia obliqua_, conhecida como taturana, é a única que pode causar acidentes graves com a necessidade do uso de soro antilonômico. 
+    There are several urticating caterpillars in Rio Grande do Sul, but _Lonomia obliqua_, known as the "taturana," is the only one that can cause severe accidents requiring the use of antilonomic serum.
     """
     st.divider()
     st.markdown(texto_lagarta)
     
     texto_lonomia = """
-    **_Lonomia obliqua_**: conhecida como taturana, o seu ciclo de vida é de, em média, 150 dias. A fase de lagarta, que representa perigo devido à presença das cerdas urticantes, tem duração de 60 dias. Durante esta fase da vida, as lagartas permanecem agregadas em troncos de árvores durante o dia e, à noite, sobem para as copas para se alimentar de folhas. Por esta característica de permanecerem agregadas, quando um acidente ocorre, o paciente entra em contato com vários animais ao mesmo tempo. O maior perigo deste acidente é a sua toxina, que pode levar à insuficiência renal aguda.
+    **_Lonomia obliqua_**: Known as the "taturana," its life cycle lasts, on average, 150 days. The caterpillar phase, which poses a danger due to the presence of urticating bristles, lasts for 60 days. During this phase of life, the caterpillars remain clustered on tree trunks during the day and, at night, climb to the treetops to feed on leaves. Due to their tendency to stay clustered, when an accident occurs, the patient comes into contact with several individuals simultaneously. The major danger of this accident is its toxin, which can lead to acute renal failure.
     """
     lonomia_container = st.container(border=True)
     with lonomia_container:
@@ -311,42 +311,47 @@ with tab3:
     st.header("Metodologia")
     texto_metodologia_1 = """    
         
-    A metodologia utilizada na realização e coleta de informações para originar o “Buscador de Soros Antivenenos” foi desenvolvida no Software QGIS, a partir de um processo chamado de Network Analysis, com objetivo de adquirir as distâncias dos municípios do Rio Grande do Sul, ao ponto focal de soro antiveneno mais próximo. Para a idealização do projeto foram utilizados dados shapefile (linhas, pontos e polígonos), ferramentas e plugins do programa QGIS.
-    
-    Inicialmente foram introduzidos e espacializados os Pontos Focais (locais onde os soros antivenenos se encontram) no software, de forma que fosse possível a visualização dos mesmos no território do estado do Rio Grande do Sul. Estes Pontos Focais foram adquiridos por meio de uma tabela disponibilizada pelo Centro de Informação Toxicológica (CIT). Juntos dos Pontos Focais foram adicionados pontos das sedes municipais do Rio Grande do Sul (estes pontos foram identificados a partir do centro urbano dos municípios), um shapefile das rodovias do RS e um shapefile de polígonos do estado do RS (Figura 1). 
-    
-    ![Figura 1](https://github.com/andrejarenkow/Soro-Antiveneno/blob/main/imagens_metodologia/figura1.png?raw=true "Figura 1")
-    
-    Pontos Focais de Soro Antiveneno, em vermelho. Sedes Municipais, em azul. Rodovias do RS, em marrom.
-    
-    Uma vez com todos os dados organizados, foi possível por meio de ferramentas e plugins do QGIS realizar o Network Analysis, onde foi feito um geoprocessamento dos dados para obter as distâncias das sedes municipais até os Pontos Focais de Soro Antiveneno. O geoprocessamento teve como base o plugin QNEAT3 que criou as distâncias em linha reta dos Pontos Focais até as sedes municipais do estado. Como sabemos que o principal meio de transporte da população é o automóvel, foi realizado uma correção das distâncias para que elas fossem feitas utilizando a rede de rodovias do estado (Figura 2). 
-    
-    ![Figura 2](https://github.com/andrejarenkow/Soro-Antiveneno/blob/main/imagens_metodologia/figura4%20certa.png?raw=true "Figura 2")
-    
-    Geoprocessamento de Network Analysis realizada para Pontos Focais com Soro Antiveneno SAB. 
-    Em verde, a distância da sede municipal de cada município do RS até o Ponto Focal mais próximo, com base nas rodovias do estado.
-    
-    Como nem todos Pontos Focais têm em seu estoque todos 6 Soros Antivenenos disponibilizados, o geoprocessamento foi realizado seis vezes, uma vez para cada Soro Antiveneno. Uma vez para Pontos Focais com SAB, uma vez para Pontos Focais com SAC, e assim por diante. (Figura 3)
+**Methodology for Creating the "Antivenom Locator"**
+
+The methodology used for gathering information to create the "Antivenom Locator" was developed in the QGIS software, utilizing a process called Network Analysis. The objective was to obtain the distances from the municipalities in Rio Grande do Sul to the nearest antivenom focal point. The project was conceptualized using shapefile data (lines, points, and polygons), tools, and plugins from the QGIS program.
+
+Initially, the Antivenom Focal Points (locations where antivenoms are available) were introduced and spatialized in the software, allowing for their visualization on the territory of the state of Rio Grande do Sul. These Focal Points were obtained through a table provided by the Toxicological Information Center (CIT). Alongside the Focal Points, points of the municipal headquarters of Rio Grande do Sul were added (these points were identified from the urban centers of the municipalities), a shapefile of RS highways, and a shapefile of RS state polygons (Figure 1).
+
+![Figure 1](https://github.com/andrejarenkow/Soro-Antiveneno/blob/main/imagens_metodologia/figura1.png?raw=true "Figure 1")
+
+Antivenom Focal Points in red. Municipal Headquarters in blue. RS Highways in brown.
+
+Once all the data was organized, the Network Analysis was conducted using tools and plugins in QGIS. A geoprocessing of the data was performed to obtain the distances from the municipal headquarters to the Antivenom Focal Points. The geoprocessing was based on the QNEAT3 plugin, which created straight-line distances from the Focal Points to the municipal headquarters of the state. As the primary means of transportation for the population is by car, a correction of the distances was made using the state highway network (Figure 2).
+
+![Figure 2](https://github.com/andrejarenkow/Soro-Antiveneno/blob/main/imagens_metodologia/figura4%20certa.png?raw=true "Figure 2")
+
+Network Analysis geoprocessing performed for Focal Points with Antivenom SAB. In green, the distance from the municipal headquarters of each municipality in RS to the nearest Focal Point, based on the state highways.
+
+Since not all Focal Points have all six available Antivenoms in their stock, the geoprocessing was performed six times, once for each Antivenom. Once for Focal Points with SAB, once for Focal Points with SAC, and so on (Figure 3).
     """
     
     
     
     
     texto_metodologia_2 =  """
-    1- Soro antiveneno SAC | 2- Soro antiveneno SAE | 3- Soro antiveneno Saar |
-    4- Soro antiveneno SAEsc | 5- Soro antiveneno SAB | 6- Soro antiveneno SALon
     
-    Como produto final da metodologia aplicada foram obtidas tabelas dos municípios do Rio Grande do Sul e qual Ponto Focal se localiza mais próximo do mesmo, com distância em km. Foi obtida uma tabela para cada Soro Antiveneno (SAB, SAC, SAE, SAEsc, SALon e Saar). (Figura 4)
-    
-    ![Figura 4](https://github.com/andrejarenkow/Soro-Antiveneno/blob/main/imagens_metodologia/figura4.png?raw=true "Figura 4")
-    
-    Exemplo de tabela gerada após o geoprocessamento dos dados.
-    Tabela para Soro Antiveneno SAB.
-    
-    #### Fluxo Metodológico
-    
-    ![Fluxo Metodológico](https://github.com/andrejarenkow/Soro-Antiveneno/blob/main/imagens_metodologia/fluxo%20metodologico.png?raw=true "Fluxo Metodológico")
-    
+**Antivenom Types:**
+1. Antivenom SAC
+2. Antivenom SAE
+3. Antivenom Saar
+4. Antivenom SAEsc
+5. Antivenom SAB
+6. Antivenom SALon
+
+As a final product of the applied methodology, tables were obtained for the municipalities of Rio Grande do Sul, indicating which Focal Point is closest to each municipality, along with the corresponding distance in kilometers. A separate table was generated for each Antivenom (SAB, SAC, SAE, SAEsc, SALon, and Saar) (Figure 4).
+
+![Figure 4](https://github.com/andrejarenkow/Soro-Antiveneno/blob/main/imagens_metodologia/figura4.png?raw=true "Figure 4")
+
+Example table generated after geoprocessing of the data. Table for Antivenom SAB.
+
+#### Methodological Flow
+
+![Methodological Flow](https://github.com/andrejarenkow/Soro-Antiveneno/blob/main/imagens_metodologia/fluxo%20metodologico.png?raw=true "Methodological Flow")  
     """
 
     st.markdown(texto_metodologia_1)
@@ -355,6 +360,6 @@ with tab3:
 
 creditos = st.container(border=True)
 with creditos:
-    st.write('Aplicação desenvolvida pela equipe da Divisão de Vigilância Ambiental em Saúde do Centro Estadual de Vigilância em Saúde da Secretaria Estadual de Saúde do Rio Grande do Sul')
-    st.write('Integrantes: Bárbara Mendes Pietoso, Carlo Johannes Lipp Nissinen, Carolina Schell Franceschina e André Jarenkow')
+    st.write('Application developed by the team of the Division of Environmental Surveillance in Health of the State Center for Health Surveillance of the State Health Department of Rio Grande do Sul.')
+    st.write('Members: Bárbara Mendes Pietoso, Carlo Johannes Lipp Nissinen, Carolina Schell Franceschina e André Jarenkow')
            
