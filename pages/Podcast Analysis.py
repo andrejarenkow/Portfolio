@@ -18,17 +18,10 @@ with st.sidebar:
 # About the dashboard
 This dashboard was created based on a study of the Spotipy library, which facilitates the consumption of the Spotify API. I selected the UP! podcast to evaluate its data and present it in a way that is easy to understand.
 
-# About me
+
             """
     st.markdown(texto)
-    st.image('https://github.com/andrejarenkow/Portfolio/blob/main/imagens_timeline/andre.png?raw=true', width=100)
-
-    texto = """
-
-My name is André Jarenkow, a Python language enthusiast, and a loyal listener to UP!
-            """
-    st.markdown(texto)
-    
+        
 
 
 # Título principal do painel
