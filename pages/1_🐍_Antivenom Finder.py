@@ -308,7 +308,7 @@ Crotalic accidents are those caused by the rattlesnake (_Crotalus durissus_). In
     
     
 with tab3:
-    st.header("Metodologia")
+    st.header("Methodology")
     texto_metodologia_1 = """    
         
 **Methodology for Creating the "Antivenom Locator"**
