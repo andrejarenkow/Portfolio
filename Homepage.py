@@ -34,9 +34,10 @@ with st.sidebar:
 Hello! My name is André Jarenkow, and this is my Portfolio!.
             """
     st.markdown(texto)
+    st_lottie('https://raw.githubusercontent.com/andrejarenkow/Portfolio/main/Animation%20-%201705284418621.json')
 
 
-st_lottie('https://raw.githubusercontent.com/andrejarenkow/Portfolio/main/Animation%20-%201705284418621.json')
+
     
 
 
