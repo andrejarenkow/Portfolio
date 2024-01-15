@@ -22,7 +22,7 @@ col3.image('https://github.com/andrejarenkow/PainelOvitrampas/blob/main/logo_est
 # Barra lateral para info
 with st.sidebar:
     texto = """
-# About the dashboard
+# About the webapp
 This web app was created to locate antivenom in case of accidents involving venomous animals in the state of Rio Grande do Sul, in southern Brazil. 
 The methodology tab provides a detailed description of how the database, which enables the web app's functionality, was generated.
 It has become an official tool for the state. 
