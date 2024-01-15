@@ -36,11 +36,13 @@ col2.caption('Original auction link - https://www.letravivaleiloes.com.br/leilao
 with st.sidebar:
     texto = """
 # About the dashboard
-This dashboard was created to analyze data from an online auction site where my brother worked. 
-To collect the data, it was necessary to create a Python script using the Beautiful Soup library.
-The script performs web scraping on the auction site, extracting important data and saving it.
-A function was developed to extract even hidden data that holds the bidding history for each item. 
-The dashboard currently utilizes an Excel spreadsheet with the entire history, but the code in the GitHub repository contains all the scripts used.
+This dashboard has been meticulously crafted to analyze data derived from an online auction platform where my brother is employed. 
+The data collection process involved the creation of a Python script utilizing the Beautiful Soup library. 
+This script proficiently conducts web scraping on the auction site, extracting crucial information and storing it efficiently. 
+A specialized function was developed to uncover even the concealed data, providing comprehensive bidding histories for each auction item.
+
+Presently, the dashboard seamlessly integrates with an Excel spreadsheet housing the entire auction history. 
+For transparency and collaboration, all the scripts utilized in this project are available in the GitHub repository.
 
             """
     st.markdown(texto)
