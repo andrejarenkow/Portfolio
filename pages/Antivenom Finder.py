@@ -8,11 +8,11 @@ from streamlit_folium import st_folium, folium_static
 
 # Configurações da página
 st.set_page_config(
-    page_title="Andre Jarenkow Portfolio",
-    page_icon="	:snake:",
+    page_title="Andre Jarenkow - Portfolio",
+    page_icon="	:eyeglasses:",
     layout="wide",
-    initial_sidebar_state='collapsed'
-)
+    initial_sidebar_state='expanded'
+) 
 col1, col2, col3 = st.columns([1,4,1])
 
 col1.image('https://github.com/andrejarenkow/PainelOvitrampas/blob/main/logo_cevs%20(1).png?raw=true', width=200)
