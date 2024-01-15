@@ -42,8 +42,8 @@ Hello! My name is André Jarenkow, and this is my Portfolio!.
 
 
 st.title('Portfolio André Jarenkow')
-texto_sobre_mim = 
-"""
+texto_sobre_mim = """
+
 I am a health specialist at the State Center for Health Surveillance of Rio Grande do Sul (CEVS-RS), with over five years of experience in environmental and health surveillance. 
 I hold a degree and a master's in Chemical Engineering from the Federal University of Rio Grande do Sul (UFRGS), and I am currently pursuing a specialization in Epidemiology at the Oswaldo Cruz Foundation (FIOCRUZ).
 
