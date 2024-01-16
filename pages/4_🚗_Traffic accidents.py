@@ -9,11 +9,11 @@ from datetime import datetime
 
 # Configurações da página
 st.set_page_config(
-    page_title="Traffic Accidents - Porto Alegre, Brazil",
-    page_icon="	:car:",
+    page_title="Andre Jarenkow - Portfolio",
+    page_icon="	:eyeglasses:",
     layout="wide",
-    initial_sidebar_state='collapsed'
-)
+    initial_sidebar_state='expanded'
+) 
 
 st.title('Traffic accidents in Porto Alegre, Brazil')
 
@@ -176,7 +176,7 @@ with col3:
     #st.plotly_chart(acid_hora, theme=None)
     st.markdown("[Data source](https://dadosabertos.poa.br/dataset/acidentes-de-transito-acidentes)")
 
-df
+
 
 
 
