@@ -19,8 +19,13 @@ st.set_page_config(
 with st.sidebar:
     texto = """
 # About the dashboard
-This dashboard is the result of an in-depth exploration of the Spotipy library, designed to streamline access to the Spotify API. 
-Choosing the UP! podcast as the focal point, I meticulously examined its data and crafted an interface that offers a clear and intuitive presentation for comprehensive analysis.
+Aqui está uma versão aprimorada do seu texto:
+
+This dashboard delves into the analysis of traffic accidents in the city of Porto Alegre, Brazil.
+It is meticulously constructed using public data generously provided by the municipal government,
+allowing users to visualize and map all accidents that have occurred since 2019. 
+The dashboard features tailored filters focusing on specific parameters of interest, providing a comprehensive historical overview of accidents. 
+Additionally, a unique hexbin map is incorporated to offer an alternative spatial representation of the data, enhancing the depth and versatility of the analysis.
 
 
             """
