@@ -15,6 +15,17 @@ st.set_page_config(
     initial_sidebar_state='expanded'
 ) 
 
+# Barra lateral para info
+with st.sidebar:
+    texto = """
+# About the dashboard
+This dashboard is the result of an in-depth exploration of the Spotipy library, designed to streamline access to the Spotify API. 
+Choosing the UP! podcast as the focal point, I meticulously examined its data and crafted an interface that offers a clear and intuitive presentation for comprehensive analysis.
+
+
+            """
+    st.markdown(texto)
+
 st.title('Traffic accidents in Porto Alegre, Brazil')
 
 px.set_mapbox_access_token(st.secrets['MAPBOX_TOKEN'])
@@ -51,7 +62,7 @@ acidentes_poa = acidentes_poa[acidentes_poa['ano']<2100].reset_index(drop=True)
 
 with col1:
     ano = st.selectbox(
-        'Selecione o ano', sorted(acidentes_poa['ano'].unique()))
+        'Selecione o ano', sorted(acidentes_poa['ano'].unique()), index=-1)
 
 df = acidentes_poa.copy()
 df = df[(df['latitude']>-31)&(df['latitude']<-29)&(df['longitude']<0)&(df['ano']==ano)]
