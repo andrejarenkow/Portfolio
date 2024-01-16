@@ -19,7 +19,6 @@ st.set_page_config(
 with st.sidebar:
     texto = """
 # About the dashboard
-Aqui está uma versão aprimorada do seu texto:
 
 This dashboard delves into the analysis of traffic accidents in the city of Porto Alegre, Brazil.
 It is meticulously constructed using public data generously provided by the municipal government,
