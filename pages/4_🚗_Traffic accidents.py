@@ -62,7 +62,7 @@ acidentes_poa = acidentes_poa[acidentes_poa['ano']<2100].reset_index(drop=True)
 
 with col1:
     ano = st.selectbox(
-        'Selecione o ano', sorted(acidentes_poa['ano'].unique()), index=-1)
+        'Selecione o ano', sorted(acidentes_poa['ano'].unique()), index=3)
 
 df = acidentes_poa.copy()
 df = df[(df['latitude']>-31)&(df['latitude']<-29)&(df['longitude']<0)&(df['ano']==ano)]
