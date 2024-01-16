@@ -172,7 +172,7 @@ acid_mes.update_layout(yaxis_range=[0,acidentes_por_mes['accidents'].max()])
 ##########################
 
 with col3:
-    st.plotly_chart(acid_mes)
+    st.plotly_chart(acid_mes, use_container_width=True)
     #st.plotly_chart(acid_hora, theme=None)
     st.markdown("[Data source](https://dadosabertos.poa.br/dataset/acidentes-de-transito-acidentes)")
 
