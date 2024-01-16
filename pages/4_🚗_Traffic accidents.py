@@ -175,11 +175,10 @@ with col3:
     st.plotly_chart(acid_mes, use_container_width=True)
     #st.plotly_chart(acid_hora, theme=None)
     st.markdown("[Data source](https://dadosabertos.poa.br/dataset/acidentes-de-transito-acidentes)")
+    st.markdown('Map legend: 1 - Accidents with only material damage; 5 - Accidents with people injured; 13 - Accidents with fatal victms')
 
 
 
 
 
-st.markdown('https://www.sinaldetransito.com.br/artigos/identificacao_de_locais_criticos_de_acidentes.pdf')
-st.markdown('1 - Acidente somente Danos materiais; 5 - Acidente com Feridos; 13 - Acidente com Vítimas Fatais')
 
