@@ -7,11 +7,23 @@ import geopandas as gpd
 
 # Configurações da página
 st.set_page_config(
-    page_title="Dengue RS",
-    page_icon=":rainbow:",
+    page_title="Andre Jarenkow - Portfolio",
+    page_icon="	:eyeglasses:",
     layout="wide",
-    initial_sidebar_state='collapsed'
-)
+    initial_sidebar_state='expanded'
+) 
+
+# Barra lateral para info
+with st.sidebar:
+    texto = """
+# About the dashboard
+
+This dashboard aims to facilitate the visualization of dengue data provided by the State of Rio Grande do Sul for those working with it.
+Information about InfoDengue has been included, which generates nowcasting to estimate data about the disease that may arrive late to the healthcare system
+
+
+            """
+    st.markdown(texto)
 
 col1, col2, col3 = st.columns([1,4,1])
 
