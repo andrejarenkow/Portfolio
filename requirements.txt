@@ -11,3 +11,4 @@ geopandas==0.14.1
 streamlit-timeline==0.0.2
 streamlit-lottie>=0.0.5
 beautifulsoup4==4.12.2
+geojson
