@@ -18,11 +18,27 @@ import re
 
 # Configurações da página
 st.set_page_config(
-    page_title="Alertas INMET - RS",
-    page_icon=":warning:",
+    page_title="Andre Jarenkow - Portfolio",
+    page_icon="	:eyeglasses:",
     layout="wide",
-    initial_sidebar_state='collapsed'
-)
+    initial_sidebar_state='expanded'
+) 
+
+# Barra lateral para info
+with st.sidebar:
+    texto = """
+# About the dashboard
+
+The tool retrieves extreme weather alerts from the National Institute of Meteorology via API,
+filters only those affecting the state of Rio Grande do Sul, draws the affected areas on the map, 
+and generates a message to be shared on WhatsApp, with the most relevant information for the reference teams of Vigidesastres in RS.
+The idea arose from the need of colleagues working in the health regions of RS, 
+who couldn't clearly verify if their region would be affected by the weather event
+
+
+            """
+    st.markdown(texto)
+    
 col1, col2, col3 = st.columns([1,1,4])
 
 col1.image('https://github.com/andrejarenkow/csv/blob/master/logo_cevs%20(2).png?raw=true', width=100)
